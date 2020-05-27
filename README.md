@@ -1,4 +1,7 @@
-# Things to Remember
+# Topics
+- array
+
+# Notes
 ## Sort function
 - `void sort (RandomAccessIterator first, RandomAccessIterator last)`
 - `void sort (RandomAccessIterator first, RandomAccessIterator last, Compare comp)`
