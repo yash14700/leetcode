@@ -1,6 +1,7 @@
 # Topics
 - array
 - backtracking
+- binary indexed tree
 
 # Notes
 ## Sort function
