@@ -1,3 +1,48 @@
+//O(log(min(m,n)))
+
+
+class Solution {
+public:
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+      //goal is to find index of smaller vector that breaks the combined vectors into two different groups
+
+      //deal with situation in which one of the vectors is present entirely in one of the groups
+      //when both are equal
+      if (nums1.size() == nums2.size()) {
+        if (nums1[nums1.size()-1] <= nums2[0]) {
+          return (nums1[nums1.size()-1] + nums2[0])/2.0;
+        }
+        else if (nums2[nums2.size()-1] <= nums1[0]) {
+          return (nums2[nums2.size()-1] + nums1[0])/2.0;
+        }
+      }
+
+
+      //set smaller and larger vectors
+      vector<int>& smaller = (nums1.size() < nums2.size())?nums1:nums2;
+      vector<int>& larger =  (smaller.size() == nums1.size())?nums2:nums1;
+      if(nums1.size() == nums2.size()) {
+        larger = nums1;
+      }
+
+      //situation in which one of the vectors is entriely in one group
+      int j = (larger.size() + smaller.size() -1)/2;
+
+      //regular situation
+      //pick i
+      int i = smaller.size()/2;
+      j =
+      //compute j
+      //loop until
+        //if xxx increase i
+        //if xxxx decrease i
+
+      //median if odd
+      //median if even
+    }
+};
+
+// O(n) Solution
 class Solution {
 public:
   double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -40,4 +85,4 @@ public:
     return result[median_pos];
 
   }
-}
+};
