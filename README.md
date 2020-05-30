@@ -2,6 +2,13 @@
 - array
 - backtracking
 - binary indexed tree
+- binary search
+
+# To do
+- euclids algorithm
+- revice bfs, dfs, dijkstra algorithm, primms, other 281 things
+- go through all the different sorting functions and data structures in 281
+- union find
 
 # Notes
 ## Sort function
